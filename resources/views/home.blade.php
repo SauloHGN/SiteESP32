@@ -18,29 +18,35 @@
 
     <body class="antialiased">
     <nav>
-            <a class="logo">Rocket Learning</a>
+            <a class="logo"></a>
             <ul class="nav-list">
-                <li><a>Opção 1</a> </li>
-                <li><a>Opção 2</a> </li>
-                <li><a>Opção 3</a> </li>
+                <li><a class="op1">Opção 1</a> </li>
+                <li><a class="op2">Opção 2</a> </li>
+                <li><a class="op3">Opção 3</a> </li>
             </ul>
+
+            <form action="http://127.0.0.1:8000/login">
+
+                <button class="button-login">Login</button>
+
+            </form>
+            
         </nav>
 
 
 
        <div class="container">   
 
-            <div class="mt-16">
 
                 <div class="item">
-                    <a class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+                    <a href="http://127.0.0.1:8000/login" class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250">
                     <div>
                         <div class="">
                                    
                             </div>
 
                             <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">
-                             Fatec Chronicles
+                             Documentação
                             </h2>
                                 
                             <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
@@ -53,40 +59,17 @@
                         </svg>
                     </a>     
                 </div>
-            </div>
 
-            <div class="item">
-                    <a class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+
+            <div class="item" >
+                    <a class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250"  href="http://127.0.0.1:8000/login">
                     <div>
                         <div class="">
                                    
                             </div>
 
                             <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">
-                             Mario Bros
-                            </h2>
-                                
-                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                Texto de descrição caso tenha
-                            </p>
-                        </div>
-
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                        </svg>
-                    </a>     
-                </div>
-            </div>
-
-            <div class="item">
-                    <a class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                    <div>
-                        <div class="">
-                                   
-                            </div>
-
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">
-                             Pokémon FireRed
+                             Estatísticas
                             </h2>
                                 
                             <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
@@ -120,16 +103,36 @@
             padding: 0;
         }
 
-        a 
+        .op1, .op2, .op3
         {
-            color: #00000;
+            position: relative;
             text-decoration: none;
+            color: #000;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+            padding: 0 10px;
+        }
+
+        .op1:after, .op2:after, .op3:after
+        {
+            content: "";
+            position: absolute;
+            background-color: #ef4444;
+            height: 3px;
+            width: 0;
+            left: 0;
+            bottom: -10px;
             transition: 0.3s;
         }
 
-        a:hover 
+        .op1:hover, .op2:hover, .op3:hover
         {
-            opacity: 0.7;
+            color: #000;
+        }
+    
+        .op1:hover:after, .op2:hover:after, .op3:hover:after
+        {
+            width: 100%;
         }
 
         .logo 
@@ -144,9 +147,9 @@
             justify-content: space-around;
             align-items: center;
             font-family: Helvetica, Arial;
-            background: #FDFDFD;
+            /*background: #FDFDFD;*/
             height: 9vh;
-            box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.08), 0 6px 8px 0 rgba(0, 0, 0, 0.01);
+            /*box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.08), 0 6px 8px 0 rgba(0, 0, 0, 0.01);*/
         }
 
         .nav-list 
@@ -165,18 +168,36 @@
             font-size: 16px; /* tamanho da fonte desejado */
             font-weight: 600;
         }
+
+        .button-login
+        {
+            text-align: center;
+            line-height: 18px;
+            background-color: #dc2626;
+            border-radius:12px;
+            height:34px;
+            padding: 8px 20px;
+            margin-right: -4vw;
+        }
+        .button-login:hover
+        {
+            background-color: #b91c1c;
+        }
         /*END Navigation*/ 
 
         .container
         {
-            display: block;
+            display: flex;
+            justify-content: center;
+            margin-top: 10vh;
         }
 
         .item
         {
-            width: 250px;
+            width: 300px;
             margin: 20px;
         }
+
             /*circulo vermelho:  h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full*/
 
         </style>                             
