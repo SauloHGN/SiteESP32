@@ -20,9 +20,9 @@
     <nav>
             <a class="logo"></a>
             <ul class="nav-list">
-                <li><a class="op1">Opção 1</a> </li>
-                <li><a class="op2">Opção 2</a> </li>
-                <li><a class="op3">Opção 3</a> </li>
+                <li><a href="#" class="op1">Sobre</a> </li>
+                <li><a href="http://127.0.0.1:8000/documentacao" class="op2">Documentação</a> </li>
+                <li><a href="http://127.0.0.1:8000/estatisticas" class="op3">Estatísticas</a> </li>
             </ul>
 
             <form action="http://127.0.0.1:8000/login">
@@ -34,23 +34,37 @@
         </nav>
 
 
+        <section class="about-us">
+        <div class="about">          
+            <div class="text">
+                <h2>Sobre</h2>
+                <p>
+                    Bem-vindo ao nosso site de vídeos educativos gratuitos! Nossa missão é proporcionar acesso fácil a conteúdos educativos de qualidade.
+                    Explore nossa biblioteca de vídeos e aprofunde seus conhecimentos em diversos temas.
+                </p>
+            </div>
+            <img src="~/Resources/" class="pic">
+        </div>       
+        </section>
+
+
 
        <div class="container">   
 
 
                 <div class="item">
-                    <a href="http://127.0.0.1:8000/login" class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250">
+                    <a href="http://127.0.0.1:8000/login" class="scale-100 p-6 bg-white dark:bg-white-800/50 dark:bg-gradient-to-bl from-white-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250">
                     <div>
                         <div class="">
                                    
                             </div>
 
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">
-                             Documentação
+                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-black">
+                             Github
                             </h2>
                                 
                             <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                Texto de descrição caso tenha
+                                Mais informações do projeto
                             </p>
                         </div>
 
@@ -60,29 +74,6 @@
                     </a>     
                 </div>
 
-
-            <div class="item" >
-                    <a class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250"  href="http://127.0.0.1:8000/login">
-                    <div>
-                        <div class="">
-                                   
-                            </div>
-
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">
-                             Estatísticas
-                            </h2>
-                                
-                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                Texto de descrição caso tenha
-                            </p>
-                        </div>
-
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                        </svg>
-                    </a>     
-                </div>
-            </div>
 
 
             </div>
@@ -194,11 +185,50 @@
 
         .item
         {
-            width: 300px;
+            width: 310px;
             margin: 20px;
         }
 
             /*circulo vermelho:  h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full*/
+
+
+            /*--------------------------------------------------------------------------------------------------------*/
+
+        .pic 
+        {
+            height: auto;
+            width: 350px;
+            margin-top: 5vh;
+        }
+
+        .about {
+            width: 1130px;
+            max-width: 85%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 5vh;
+        }
+
+        .text 
+        {
+            width: 540px;
+        }
+
+        .text h2 
+        {
+            font-size: 50px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+
+        .text p {
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 1px;
+        }
 
         </style>                             
 
