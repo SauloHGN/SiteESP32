@@ -27,7 +27,7 @@
 
             <form action="http://127.0.0.1:8000/login">
 
-                <button class="button-login">Login</button>
+                <!-- <button class="button-login">Login</button> -->
 
             </form>
             
@@ -39,8 +39,7 @@
             <div class="text">
                 <h2>Sobre</h2>
                 <p>
-                    Bem-vindo ao nosso site de vídeos educativos gratuitos! Nossa missão é proporcionar acesso fácil a conteúdos educativos de qualidade.
-                    Explore nossa biblioteca de vídeos e aprofunde seus conhecimentos em diversos temas.
+                    TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO 
                 </p>
             </div>
             <img src="~/Resources/" class="pic">
@@ -156,7 +155,7 @@
 
         li a 
         {
-            font-size: 16px; /* tamanho da fonte desejado */
+            font-size: 16px; 
             font-weight: 600;
         }
 
@@ -189,10 +188,7 @@
             margin: 20px;
         }
 
-            /*circulo vermelho:  h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full*/
-
-
-            /*--------------------------------------------------------------------------------------------------------*/
+            /*------------------------------------------------------------------------------------------------------*/
 
         .pic 
         {

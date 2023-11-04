@@ -22,7 +22,7 @@ Route::get('/login', function () {
 });
 
 Route::get('/documentacao', function () {
-    return view('login');
+    return view('documentacao');
 });
 
 Route::get('/estatisticas', function () {
