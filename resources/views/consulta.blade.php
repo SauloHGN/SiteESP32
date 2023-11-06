@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Consultar</title>
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-<form action="Cadastro.php" method="POST">
-    <p>Login</p>
-    <label for="Email">Email<input type="email" name="email"> </label><br>
+<form action="Consulta.php" method="POST">
+    <!-- <p>Login</p>
+    <label for="Email">Email<input type="email" name="email"> </label><br> -->
     
-    <label for="Senha">Senha<input type="password" name="senha"> </label><br>
+    <label for="Serial">Serial<input type="text" name="serial"> </label><br>
 
-    <button>Entrar</button>
+    <button>Consultar</button>
 </form>
     
 </body>

@@ -22,12 +22,12 @@
             <ul class="nav-list">
                 <li><a href="#" class="op1">Sobre</a> </li>
                 <li><a href="http://127.0.0.1:8000/documentacao" class="op2">Documentação</a> </li>
-                <li><a href="http://127.0.0.1:8000/estatisticas" class="op3">Estatísticas</a> </li>
+                <li><a href="http://127.0.0.1:8000/consulta" class="op3">Estatísticas</a> </li>
             </ul>
 
-            <form action="http://127.0.0.1:8000/login">
+             <form action="http://127.0.0.1:8000/login">
 
-                <!-- <button class="button-login">Login</button> -->
+                 <!-- <button class="button-login">Login</button>  -->
 
             </form>
             
@@ -52,7 +52,7 @@
 
 
                 <div class="item">
-                    <a href="http://127.0.0.1:8000/login" class="scale-100 p-6 bg-white dark:bg-white-800/50 dark:bg-gradient-to-bl from-white-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250">
+                    <a href="https://github.com/SauloHGN/SiteESP32" class="scale-100 p-6 bg-white dark:bg-white-800/50 dark:bg-gradient-to-bl from-white-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250">
                     <div>
                         <div class="">
                                    
