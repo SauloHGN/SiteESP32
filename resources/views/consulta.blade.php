@@ -9,13 +9,11 @@
 </head>
 <body>
 
-<form action="Consulta.php" method="POST">
-    <!-- <p>Login</p>
-    <label for="Email">Email<input type="email" name="email"> </label><br> -->
-    
+<form action="{{ route('Dados') }}" method="POST">
+    @csrf
     <label for="Serial">Serial<input type="text" name="serial"> </label><br>
 
-    <button>Consultar</button>
+    <button type="submit">Consultar</button>
 </form>
     
 </body>

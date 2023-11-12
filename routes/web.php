@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\ConsultaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,3 +29,7 @@ Route::get('/documentacao', function () {
 Route::get('/consulta', function () {
     return view('consulta');
 });
+
+//----------------------------------------
+
+Route::post('/Dados', [ConsultaController::class, 'AcessarDataBase'])->name('Dados');
