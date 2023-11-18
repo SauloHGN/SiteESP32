@@ -85,6 +85,16 @@ ul li a
 }
 
 
+.tabela, th, td{
+        border-collapse:collapse;
+        padding: 8px;
+        text-align: center;
+        width: 20rem;
+        margin-bottom: 2rem;
+    }
+
+
+
 .docs-sidebar .nav-link 
 {
   display: block;
@@ -310,10 +320,205 @@ ul li a
                                 </h1>
                                         
                                 <section class="docs-intro">
-                                         <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+                                         <p>Este projeto tem como objetivo criar um videogame retro utilizando o microcontrolador ESP32. Os jogos são armazenados em um cartão SD, e o controle é realizado por meio de botões conectados a uma protoboard. Esta documentação fornece informações detalhadas sobre o hardware utilizado, as conexões necessárias e as instruções de instalação.</p>
                                 </section><!--//docs-intro-->
-                           
-<div class="docs-code-block">
+
+        </header>
+                                   
+        <article class="docs-article" id="section-hardware">
+                <header class="docs-header">
+                <h2 class="docs-heading">Hardware</h2>
+
+                <section class="docs-intro">
+                        <h1>Componentes necessários:</h1>
+                </section><!--//docs-intro     Placa Wifi Esp32 Doit Devkit Esp32-wroom-32 -->
+
+                </header>
+
+                <section class="docs-section" id="item-2-1">
+                    <p> •  Microcontrolador Esp32 Wroom Doit Devkit  </p>
+                </section><!--//section-->
+
+                <section class="docs-section" id="item-2-2">
+                    <p> •  Display OLED TFT ST7789 1.3" SPI RGB 240x240</p>
+                </section><!--//section-->
+
+                <section class="docs-section" id="item-2-3">
+                    <p> •  Modulo leitor cartão SD</p>
+                </section><!--//section-->
+
+                <section class="docs-section" id="item-2-4">
+                    <p> •  Cartão micro SD</p>
+                </section><!--//section-->
+
+              <section class="docs-section" id="item-2-5">
+                  <p> • 6x Push buttons</p>
+              </section><!--//section-->
+
+              <section class="docs-section" id="item-2-6">
+                  <p> • 6x Resistores 10k OHMS</p>
+              </section><!--//section-->
+
+              <section class="docs-section" id="item-2-7">
+                  <p> • Jumpers</p>
+              </section><!--//section-->
+
+              <section class="docs-section" id="item-2-8">
+                  <p> • Protoboard</p>
+              </section><!--//section-->
+
+        </article><!--//docs-article-->
+
+
+        <article class="docs-article" id="section-conexoes">
+                <header class="docs-header">
+                        <h2 class="docs-heading">Conexões</h2>
+                        <section class="docs-intro">
+                        <p>As tabelas abaixo apresentam as conexões dos componentes com os pinos correspondentes do ESP32.</p>
+                        </section><!--//docs-intro-->
+                        </header>
+
+                        <section class="docs-section" id="item-3-1">
+
+                    <table border="1" class="tabela">
+                   <thead>
+                <tr>
+
+                <th colspan="2" style="text-align: center;">Display</th>
+
+                </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CS</td>
+                        <td>GPIO -1</td>
+                    </tr>
+                    <tr>
+                        <td>DC</td>
+                        <td>GPIO 15</td>
+                    </tr>
+                    <tr>
+                        <td>RST</td>
+                        <td>GPIO 17</td>
+                    </tr>
+                    <tr>
+                        <td>MOSI</td>
+                        <td>GPIO 23</td>
+                    </tr>
+                    <tr>
+                        <td>SCLK</td>
+                        <td>GPIO 18</td>
+                    </tr>
+                </tbody>
+            </table>
+                        </section><!--//section-->
+
+                        <section class="docs-section" id="item-3-2">
+                        <table border="1" class="tabela">
+                   <thead>
+                <tr>
+
+                <th colspan="2" style="text-align: center;">Leitor SD</th>
+
+                </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MOSI</td>
+                        <td>GPIO 12</td>
+                    </tr>
+                    <tr>
+                        <td>MISO</td>
+                        <td>GPIO 13</td>
+                    </tr>
+                    <tr>
+                        <td>SCK</td>
+                        <td>GPIO 14</td>
+                    </tr>
+                    <tr>
+                        <td>CS</td>
+                        <td>GPIO 5</td>
+                    </tr>
+                </tbody>
+            </table>
+                        </section><!--//section-->
+
+                        <section class="docs-section" id="item-3-3">
+                        <table border="1" class="tabela">
+                   <thead>
+                <tr>
+
+                <th colspan="2" style="text-align: center;">Botões</th>
+
+                </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>UP</td>
+                        <td>GPIO 34</td>
+                    </tr>
+                    <tr>
+                        <td>DOWN</td>
+                        <td>GPIO 35</td>
+                    </tr>
+                    <tr>
+                        <td>LEFT</td>
+                        <td>GPIO 32</td>
+                    </tr>
+                    <tr>
+                        <td>RIGHT</td>
+                        <td>GPIO 33</td>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td>GPIO 25</td>
+                    </tr>
+                    <tr>
+                        <td>B</td>
+                        <td>GPIO 26</td>
+                    </tr>
+                    <tr>
+                        <td>Start</td>
+                        <td>GPIO 21</td>
+                    </tr>
+                    <tr>
+                        <td>Select</td>
+                        <td>GPIO 22</td>
+                    </tr>
+                </tbody>
+            </table>
+
+                        </section><!--//section-->
+
+        </article><!--//docs-article-->
+
+        <article class="docs-article" id="section-instalacao">
+                <header class="docs-header">
+                <h2 class="docs-heading">Instalação</h2>
+
+                <section class="docs-intro">
+                        <p>Section intro goes here. You can list all your FAQs using the format below.</p>
+                </section><!--//docs-intro-->
+                </header>
+
+                <section class="docs-section" id="item-9-1">
+<pre class="shadow-lg rounded">
+  <code class="json hljs" style="display: flex; justify-content: center">
+    <span class="hljs-string">https://github.com/SauloHGN/Emulador-ESP32.git</span>
+</code>
+</pre>
+                        <h1 class="section-heading">Adicionar bibliotecas</h1>
+                        <p>FOTO</p>
+                        <p>FOTO</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+                        <div class="docs-code-block">
+
+                        <h1 class="section-heading">Adicione o ESP32 as referências </h1>
+
+                        <h1 class="section-heading">Instale o driver CH340:   <a href="https://sparks.gogo.co.nz/ch340.html" style="color: #dc2626; font-weight: 500"> https://sparks.gogo.co.nz/ch340.html</a></h1>
 
 <pre class="shadow-lg rounded"><code class="json hljs">
 [
@@ -332,94 +537,8 @@ ul li a
 </code></pre>
 
 </div><!--//docs-code-block-->
+                      </section><!--//section-->
 
-        </header>
-                                   
-        <article class="docs-article" id="section-hardware">
-                <header class="docs-header">
-                <h2 class="docs-heading">Hardware</h2>
-
-                <section class="docs-intro">
-                        <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
-                </section><!--//docs-intro-->
-
-                </header>
-
-                <section class="docs-section" id="item-2-1">
-                        <h1 class="section-heading">Section Item 2.1</h1>
-                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-                </section><!--//section-->
-
-                <section class="docs-section" id="item-2-2">
-                                <h1 class="section-heading">Section Item 2.2</h1>
-                                <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-                </section><!--//section-->
-
-                <section class="docs-section" id="item-2-3">
-                        <h1 class="section-heading">Section Item 2.3</h1>
-                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-                </section><!--//section-->
-
-        </article><!--//docs-article-->
-
-
-        <article class="docs-article" id="section-conexoes">
-                <header class="docs-header">
-                        <h2 class="docs-heading">Conexão</h2>
-                        <section class="docs-intro">
-                        <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
-                        </section><!--//docs-intro-->
-                        </header>
-
-                        <section class="docs-section" id="item-3-1">
-                                <h1 class="section-heading">Section Item 3.1</h1>
-                                <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-                        </section><!--//section-->
-
-                        <section class="docs-section" id="item-3-2">
-                                <h1 class="section-heading">Section Item 3.2</h1>
-                                <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-                        </section><!--//section-->
-
-                        <section class="docs-section" id="item-3-3">
-                                <h1 class="section-heading">Section Item 3.3</h1>
-                                <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-                        </section><!--//section-->
-
-        </article><!--//docs-article-->
-
-        <article class="docs-article" id="section-instalacao">
-                <header class="docs-header">
-                <h2 class="docs-heading">Instalação</h2>
-
-                <section class="docs-intro">
-                        <p>Section intro goes here. You can list all your FAQs using the format below.</p>
-                </section><!--//docs-intro-->
-                </header>
-
-                <section class="docs-section" id="item-9-1">
-                        <h1 class="section-heading">Section Item 9.1 </h1>
-                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget lacinia?</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to ipsum dolor sit amet quam tortor?</h5>
-                        <p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I  bibendum sodales?</h5>
-                        <p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?</h5>
-                        <p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
-                </section><!--//section-->
-
-                <section class="docs-section" id="item-9-2">
-                        <h1 class="section-heading">Section Item 9.2</h1>
-                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget lacinia?</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to ipsum dolor sit amet quam tortor?</h5>
-                        <p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I  bibendum sodales?</h5>
-                        <p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?</h5>
-                        <p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
-                </section><!--//section-->
 
          </article><!--//docs-article-->
 
