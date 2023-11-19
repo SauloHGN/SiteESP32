@@ -293,6 +293,14 @@ ul li a
   margin-right: auto;
   margin-left: auto;
 }
+
+.pic 
+{
+  height: auto;
+  width: 300px;
+  margin-top: 3vh;
+}
+
 </style>
 
 <body class="docs-page">
@@ -511,12 +519,17 @@ ul li a
 </code>
 </pre>
                         <h1 class="section-heading">Adicionar bibliotecas</h1>
-                        <p>FOTO</p>
-                        <p>FOTO</p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+
+                        <img src="https://private-user-images.githubusercontent.com/100096259/284088277-1e437553-448c-42d0-9ed7-964b556d18ee.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDA0MjU5MzksIm5iZiI6MTcwMDQyNTYzOSwicGF0aCI6Ii8xMDAwOTYyNTkvMjg0MDg4Mjc3LTFlNDM3NTUzLTQ0OGMtNDJkMC05ZWQ3LTk2NGI1NTZkMThlZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMTE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTExOVQyMDI3MTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jYWU4ZjEzZTRjYTA5ZWQ2YzQwNjY4ZWEwYjU4NmU1OTJmYjU3OGQzMTQyNzZiOTM0MzhhNjUyODY2NjY3YjYwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.c9MYjomrav9_R13we04_nhNQnzVnhIDv_bk-RGMP8_Q"/>
+
+                        <p>Adicione todas as bibliotecas que estão na pasta src.</p>
                         <div class="docs-code-block">
 
-                        <h1 class="section-heading">Adicione o ESP32 as referências </h1>
+                        <h1 class="section-heading">Adicione o ESP32 as preferências </h1>
+
+                        <img src="https://private-user-images.githubusercontent.com/100096259/284087926-b575693c-a41a-42fe-8200-2a0afb140157.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDA0MjU5MzksIm5iZiI6MTcwMDQyNTYzOSwicGF0aCI6Ii8xMDAwOTYyNTkvMjg0MDg3OTI2LWI1NzU2OTNjLWE0MWEtNDJmZS04MjAwLTJhMGFmYjE0MDE1Ny5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMTE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTExOVQyMDI3MTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jNzE4ZGE2Njg2MWFiMzY4NjUyOWYzODdkNWNmMzQ1YzI1MjU5ZjU5MzcwOWNiNmUwYTEyYWUyNzE3OTFkYTkwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.spgRHwnxQfGjRkSQ9y214tPYKM9Jvle_OTEHp15zs1c" />
+
+                        <img  src="https://private-user-images.githubusercontent.com/100096259/284087924-b9892f10-d895-42a4-84d0-16a89ec6155a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDA0MjU5MzksIm5iZiI6MTcwMDQyNTYzOSwicGF0aCI6Ii8xMDAwOTYyNTkvMjg0MDg3OTI0LWI5ODkyZjEwLWQ4OTUtNDJhNC04NGQwLTE2YTg5ZWM2MTU1YS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMTE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTExOVQyMDI3MTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02OWY5Yjk2YjkwZGVjNGYwZTVlM2M0NTY0MTMzYTI1ZmU2MTk1N2NiZDdkYWViYWU2OTc3NzE0ZTE5ODVkZDgzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.NNlyjgfTcvXkPhEjhfcM7OgB6ukOnPwasdZnFUXSdo4"/>
 
                         <h1 class="section-heading">Instale o driver CH340:   <a href="https://sparks.gogo.co.nz/ch340.html" style="color: #dc2626; font-weight: 500"> https://sparks.gogo.co.nz/ch340.html</a></h1>
 

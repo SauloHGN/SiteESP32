@@ -33,3 +33,5 @@ Route::get('/consulta', function () {
 //----------------------------------------
 
 Route::post('/Dados', [ConsultaController::class, 'AcessarDataBase'])->name('Dados');
+
+Route::post('/api/receber-dados', 'APIController@receberDados');
