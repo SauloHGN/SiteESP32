@@ -10,5 +10,5 @@ class EspData extends Model
     use HasFactory;
 
     protected $table = 'espdata';
-    protected $fillable = ['nome_arq', 'tempo_exec', 'data_exec'];
+    protected $fillable = ['id', 'nome_arq', 'tempo_exec', 'data_exec'];
 }

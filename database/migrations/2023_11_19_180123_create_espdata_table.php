@@ -13,15 +13,12 @@ return new class extends Migration
     {
         Schema::create('espdata', function (Blueprint $table) 
         {
-
-            $table->id();
+            $table->increments('id');
             $table->string('nome_arq');
             $table->float('tempo_exec'); 
             $table->timestamp('data_exec')->useCurrent();
             
-
-            
-            $table->index('nome_arq');
+            $table->timestamp();
         });
     }
 
