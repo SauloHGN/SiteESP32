@@ -21,11 +21,11 @@
             <a class="logo"></a>
             <ul class="nav-list">
                 <li><a href="#" class="op1">Sobre</a> </li>
-                <li><a href="http://127.0.0.1:8000/documentacao" class="op2">Documentação</a> </li>
-                <li><a href="http://127.0.0.1:8000/consulta" class="op3">Estatísticas</a> </li>
+                <li><a href="documentacao" class="op2">Documentação</a> </li>
+                <li><a href="consulta" class="op3">Estatísticas</a> </li>
             </ul>
 
-             <form action="http://127.0.0.1:8000/login">
+             <form action="login">
 
                  <!-- <button class="button-login">Login</button>  -->
 
