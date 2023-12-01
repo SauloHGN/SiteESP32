@@ -11,14 +11,16 @@
     table 
     {
         border-collapse: collapse;
-        width: 100%;
+        width: 80%;
+        margin:0 auto;
+        margin-top: 15vh;
     }
 
     th, td 
     {
         border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
+        text-align: center;
+        padding: 4px;
     }
 
     th 
@@ -28,7 +30,7 @@
 </style>
 
 <body>
-    <h1>TESTE</h1>
+
     <table>
             <thead>
                 <tr>
@@ -38,11 +40,13 @@
                 </tr>
             </thead>
             <tbody>
+            @foreach($registros as $registro)
                     <tr>
-                        <td>{{ 'Mario' }}</td>
-                        <td>{{ '2' }}</td>
-                        <td>{{ '12/11/2023' }}</td>
+                        <td>{{ $registros->nome_arq }}</td>
+                        <td>{{ $registros->tempo_exec }}</td>
+                        <td>{{ \Carbon\Carbon::parse($registros->data_exec)->format('d/m/Y') }}</td>
                     </tr>
+            @endforeach
             </tbody>
         </table>
 </body>

@@ -19,7 +19,15 @@ class ConsultaController extends Controller
 
         $serial = $request->input('serial');
 
-        $registros = EspData::where('serial', $serial)->get();
+        //$registros = EspData::where('serial', $serial)->get();
+
+        $registros = EspData::find($serial);
+
+        if (!$registros) 
+        {
+            return response()->json(['error' => 'Nenhum registro encontrado para o número de série fornecido'], 404);
+        }
+
 
         return view('estatistica', ['registros' => $registros]);
     }

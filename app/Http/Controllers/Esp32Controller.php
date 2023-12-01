@@ -18,10 +18,11 @@ class Esp32Controller extends Controller
             $caminhoDB = database_path('BancoESP32.sqlite'); // Substitua pelo caminho real do seu banco
             $pdo = new PDO("sqlite:$caminhoDB");
 
+
+
             // Dados recebidos da solicitação
             $dados = $request->json()->all();
 
-            // Prepara a consulta SQL
             $sql = "INSERT INTO espdata (id, nome_arq, tempo_exec, data_exec) VALUES (:id, :nome_arq, :tempo_exec, :data_exec)";
             $stmt = $pdo->prepare($sql);
 
