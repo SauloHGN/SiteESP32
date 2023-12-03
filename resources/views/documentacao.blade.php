@@ -113,6 +113,13 @@ ul li a
   color: #dc2626; /* ou qualquer outra cor desejada */
 }
 
+.fim{
+  font-size: 1.5rem;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+}
+
 
 *, ::before, ::after 
 {
@@ -520,34 +527,22 @@ ul li a
 </pre>
                         <h1 class="section-heading">Adicionar bibliotecas</h1>
 
-                        <img src="https://private-user-images.githubusercontent.com/100096259/284088277-1e437553-448c-42d0-9ed7-964b556d18ee.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDA0MjU5MzksIm5iZiI6MTcwMDQyNTYzOSwicGF0aCI6Ii8xMDAwOTYyNTkvMjg0MDg4Mjc3LTFlNDM3NTUzLTQ0OGMtNDJkMC05ZWQ3LTk2NGI1NTZkMThlZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMTE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTExOVQyMDI3MTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jYWU4ZjEzZTRjYTA5ZWQ2YzQwNjY4ZWEwYjU4NmU1OTJmYjU3OGQzMTQyNzZiOTM0MzhhNjUyODY2NjY3YjYwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.c9MYjomrav9_R13we04_nhNQnzVnhIDv_bk-RGMP8_Q"/>
+                        <img src="//i.imgur.com/MrlihGt.png"/>
 
                         <p>Adicione todas as bibliotecas que estão na pasta src.</p>
                         <div class="docs-code-block">
 
                         <h1 class="section-heading">Adicione o ESP32 as preferências </h1>
 
-                        <img src="https://private-user-images.githubusercontent.com/100096259/284087926-b575693c-a41a-42fe-8200-2a0afb140157.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDA0MjU5MzksIm5iZiI6MTcwMDQyNTYzOSwicGF0aCI6Ii8xMDAwOTYyNTkvMjg0MDg3OTI2LWI1NzU2OTNjLWE0MWEtNDJmZS04MjAwLTJhMGFmYjE0MDE1Ny5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMTE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTExOVQyMDI3MTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jNzE4ZGE2Njg2MWFiMzY4NjUyOWYzODdkNWNmMzQ1YzI1MjU5ZjU5MzcwOWNiNmUwYTEyYWUyNzE3OTFkYTkwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.spgRHwnxQfGjRkSQ9y214tPYKM9Jvle_OTEHp15zs1c" />
+                        <img src="https://i.imgur.com/D90Quwjl.png" />
 
-                        <img  src="https://private-user-images.githubusercontent.com/100096259/284087924-b9892f10-d895-42a4-84d0-16a89ec6155a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDA0MjU5MzksIm5iZiI6MTcwMDQyNTYzOSwicGF0aCI6Ii8xMDAwOTYyNTkvMjg0MDg3OTI0LWI5ODkyZjEwLWQ4OTUtNDJhNC04NGQwLTE2YTg5ZWM2MTU1YS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMTE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTExOVQyMDI3MTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02OWY5Yjk2YjkwZGVjNGYwZTVlM2M0NTY0MTMzYTI1ZmU2MTk1N2NiZDdkYWViYWU2OTc3NzE0ZTE5ODVkZDgzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.NNlyjgfTcvXkPhEjhfcM7OgB6ukOnPwasdZnFUXSdo4"/>
+                        <img  src="//i.imgur.com/LEdx59M.png" width="600" height="400" />
 
                         <h1 class="section-heading">Instale o driver CH340:   <a href="https://sparks.gogo.co.nz/ch340.html" style="color: #dc2626; font-weight: 500"> https://sparks.gogo.co.nz/ch340.html</a></h1>
 
-<pre class="shadow-lg rounded"><code class="json hljs">
-[
-  {
-    <span class="hljs-attr">"title"</span>: <span class="hljs-string">"apples"</span>,
-    <span class="hljs-attr">"count"</span>: [<span class="hljs-number">12000</span>, <span class="hljs-number">20000</span>],
-    <span class="hljs-attr">"description"</span>: {<span class="hljs-attr">"text"</span>: <span class="hljs-string">"..."</span>, <span class="hljs-attr">"sensitive"</span>: <span class="hljs-literal">false</span>}
-  },
-  {
-    <span class="hljs-attr">"title"</span>: <span class="hljs-string">"oranges"</span>,
-    <span class="hljs-attr">"count"</span>: [<span class="hljs-number">17500</span>, <span class="hljs-literal">null</span>],
-    <span class="hljs-attr">"description"</span>: {<span class="hljs-attr">"text"</span>: <span class="hljs-string">"..."</span>, <span class="hljs-attr">"sensitive"</span>: <span class="hljs-literal">false</span>}
-  }
-]
+                        <p class="fim"> Compile e aproveite</p>
 
-</code></pre>
+
 
 </div><!--//docs-code-block-->
                       </section><!--//section-->

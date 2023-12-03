@@ -39,10 +39,10 @@
             <div class="text">
                 <h2>Sobre</h2>
                 <p>
-                    TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO 
+                O projeto consiste em um Emulador portatil de jogos  .nes, utilizando o microcontrolador esp32. O videogame terá um display LCD para mostrar a tela do jogo e push buttons para controlar o dispositivo. Integrado a um Website para monitorar as estatísticas de tempo do jogo. 
                 </p>
             </div>
-            <img src="~/Resources/" class="pic">
+            <img src="https://i.imgur.com/kB280Lk.jpeg" class="pic" >
         </div>       
         </section>
 
@@ -193,7 +193,7 @@
         .pic 
         {
             height: auto;
-            width: 350px;
+            width: 400px;
             margin-top: 5vh;
         }
 
