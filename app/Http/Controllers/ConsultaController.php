@@ -21,7 +21,7 @@ class ConsultaController extends Controller
 
         //$registros = EspData::where('serial', $serial)->get();
 
-        $registros = EspData::find($serial);
+        $registros = EspData::find($serial)->get();
 
         if (!$registros) 
         {

@@ -31,7 +31,7 @@
 
 <body>
 
-    <table>
+        <table>
             <thead>
                 <tr>
                     <th>Nome do Arquivo</th>
@@ -42,9 +42,9 @@
             <tbody>
             @foreach($registros as $registro)
                     <tr>
-                        <td>{{ $registros->nome_arq }}</td>
-                        <td>{{ $registros->tempo_exec }}</td>
-                        <td>{{ \Carbon\Carbon::parse($registros->data_exec)->format('d/m/Y') }}</td>
+                        <td>{{ $registro->nome_arq }}</td>
+                        <td>{{ $registro->tempo_exec }}</td>
+                        <td>{{ \Carbon\Carbon::parse($registro->data_exec)->format('d/m/Y') }}</td>
                     </tr>
             @endforeach
             </tbody>
